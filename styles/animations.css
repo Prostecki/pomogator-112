@@ -23,3 +23,28 @@
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
+
+.text-appearing {
+  animation: text-appearing ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes text-appearing {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.2;
+    transform: translateY(60px);
+  }
+  70% {
+    opacity: 0.6;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
