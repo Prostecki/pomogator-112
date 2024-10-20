@@ -6,7 +6,7 @@ console.log(contactButton);
 const feedbackFormContainer = document.querySelector(
   ".feedback-form-container"
 );
-console.log(feedbackFormContainer);
+const headerParagraph = document.getElementById("header-animate-paragraph");
 
 window.addEventListener("DOMContentLoaded", () => {
   feedbackFormContainer.remove();
