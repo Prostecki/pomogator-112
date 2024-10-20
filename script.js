@@ -7,6 +7,10 @@ const feedbackFormContainer = document.querySelector(
   ".feedback-form-container"
 );
 const headerParagraph = document.getElementById("header-animate-paragraph");
+const serviceElement = document.querySelectorAll(".service");
+serviceElement.forEach((item) => {
+  item.classList.add("service-appearing");
+});
 
 window.addEventListener("DOMContentLoaded", () => {
   feedbackFormContainer.remove();

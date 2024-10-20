@@ -1,0 +1,25 @@
+@keyframes appear {
+  0% {
+    transform: translateY(200px);
+    opacity: 0; /* Начинаем с полной прозрачности */
+  }
+  30% {
+    transform: translateY(100px);
+    opacity: 0.5; /* Полупрозрачный */
+  }
+  70% {
+    transform: translateY(50px);
+    opacity: 0.8; /* Почти непрозрачный */
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1; /* Полная непрозрачность */
+  }
+}
+
+.service-appearing {
+  transition: all 0.5;
+  animation: appear ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
