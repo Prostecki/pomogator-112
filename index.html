@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <script src="script.js" defer></script>
+    <script src="fetchTelegram.js" defer></script>
+    <title>Помогатор-112</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="name-company">
+          <h1>
+            <span class="blue-text">Помогатор </span
+            ><span class="red-text">112</span>
+          </h1>
+          <p>Попал в просак? Свяжитесь по телефону +123456778</p>
+        </div>
+        <nav class="navigation-box">
+          <a href="#">Главная</a>
+          <a href="#">О нас</a>
+          <a href="#">Контакты</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <section class="first-presenting-section">
+        <div class="background-wrapper"></div>
+        <div class="first-presenting-box-info">
+          <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            accusamus consequatur repudiandae nemo a debitis?
+          </article>
+          <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+          <button id="call-to-locksmith" class="button">Вызвать мастера</button>
+        </div>
+      </section>
+      <div class="services">
+        <div class="service">
+          <img src="images/installation.png" alt="Commercial Locksmith" />
+          <h3>Замена замков</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. standard dummy text ever.
+          </p>
+          <a href="#" class="button">Об услуге</a>
+        </div>
+        <div class="service">
+          <img src="images/auto_locks.png" alt="Residential Locksmith" />
+          <h3>Вскрытие автомобилей</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. standard dummy text ever.
+          </p>
+          <a href="#" class="button">Об услуге</a>
+        </div>
+        <div class="service">
+          <img src="images/urgent_opening.png" alt="Automotive Locksmith" />
+          <h3>Вскрытие дверей</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. standard dummy text ever.
+          </p>
+          <a href="#" class="button">Об услуге</a>
+        </div>
+      </div>
+      <section class="all-day-locksmith-services">
+        <article>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa rerum
+          animi odio!
+        </article>
+        <div class="all-day-container">
+          <div class="img-wrapper-services">
+            <img
+              src="images/locksmith-repair.png"
+              alt="locksmith repair service"
+            />
+          </div>
+          <div class="locksmith-services-box-info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Excepturi illum nostrum magni?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              deserunt enim recusandae rem nisi corporis voluptates delectus,
+              repudiandae sunt reprehenderit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+              repellendus vel quaerat saepe deleniti aliquam.
+            </p>
+            <p>Contact us today!</p>
+          </div>
+        </div>
+      </section>
+      <section class="feedback-form-container">
+        <h1 style="text-align: center">
+          Попали в просак? Свяжитесь с нами через форму обратной связи!
+        </h1>
+        <form action="#" method="post">
+          <div class="close-modal">X</div>
+          <div>
+            <label for="name">Имя:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="phone">Контактный телефон:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Введите номер телефона"
+              required
+              pattern="[0-9]{11}"
+            />
+          </div>
+
+          <div>
+            <label for="message">Сообщение:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="Введите ваше сообщение"
+              required
+            ></textarea>
+          </div>
+
+          <div class="checkbox-container">
+            <label for="urgent">Срочно</label>
+            <input type="checkbox" id="urgent" name="urgent" />
+          </div>
+
+          <div>
+            <button class="form-submit" type="submit">Отправить</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Помогатор-112. Все права защищены.</p>
+      </div>
+    </footer>
+  </body>
+</html>

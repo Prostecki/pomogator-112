@@ -1,0 +1,15 @@
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  .service {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
