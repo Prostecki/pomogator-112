@@ -30,7 +30,7 @@ body {
   position: absolute;
   top: 0;
   max-width: 100%;
-  max-height: 50%;
+  max-height: 100vh;
   z-index: 3;
   left: 0;
   right: 0;
@@ -136,7 +136,7 @@ main h1 {
   margin-bottom: 20px;
 }
 
-main .button {
+main .call-to-locksmith {
   display: block;
   width: 200px;
   margin: 20px auto;
@@ -147,6 +147,9 @@ main .button {
   text-decoration: none;
   font-size: 18px;
   border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
 }
 
 main .button:hover {
@@ -170,7 +173,7 @@ main .button:hover {
 .first-presenting-section {
   background: rgba(0, 0, 0, 0.7);
   position: relative;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -182,13 +185,16 @@ main .button:hover {
 }
 .first-presenting-box-info h1 {
   color: #ff4c4c;
+  opacity: 0;
 }
+
 .first-presenting-section article {
   color: white;
   letter-spacing: 1.2px;
   font-weight: bolder;
   font-size: 1.8rem;
   text-align: center;
+  opacity: 0;
 }
 
 .services {
@@ -208,6 +214,7 @@ main .button:hover {
   box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .service img {
@@ -233,7 +240,10 @@ main .button:hover {
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
-  display: inline-block;
+  display: block;
+  max-width: 250px;
+  text-align: center;
+  width: 200px;
 }
 
 .service .button:hover {
@@ -406,4 +416,9 @@ footer p {
 .footer-container p:hover {
   color: #e8491d;
   transition: 0.5s;
+}
+
+.isActive {
+  opacity: 1 !important;
+  transition: 0.6s;
 }

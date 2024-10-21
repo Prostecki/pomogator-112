@@ -1,4 +1,4 @@
-/* Мобильная адаптация */
+/* XL */
 @media (max-width: 768px) {
   header h1 {
     font-size: 28px;
@@ -11,5 +11,41 @@
   .service {
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1440px) {
+  header .container .name-company h1 {
+    font-size: 2.5rem;
+  }
+  header .container .name-company p {
+    font-size: 1.5rem;
+  }
+  .first-presenting-box-info article {
+    font-size: 2.2rem;
+  }
+  .first-presenting-box-info h1 {
+    font-size: 2.5rem;
+  }
+  #call-to-locksmith {
+    font-size: 1.5rem;
+    padding: 15px 10px;
+    width: 15rem;
+  }
+  .service p {
+    font-size: 1.3rem;
+  }
+  .all-day-locksmith-services article {
+    font-size: 2.5rem;
+  }
+  .img-wrapper-services {
+    display: flex;
+    align-items: center;
+  }
+  .locksmith-services-box-info p {
+    font-size: 1.5rem;
+  }
+  footer p {
+    font-size: 1.3rem;
   }
 }
