@@ -40,7 +40,6 @@ contactButton.addEventListener("click", () => {
     return element;
   };
 
-  mainContainer.remove();
   document.body.style.overflow = "hidden";
   header.style.filter = "blur(3px)";
   mainContainer.style.filter = "blur(3px)";
