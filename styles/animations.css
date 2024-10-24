@@ -1,20 +1,52 @@
 @keyframes appear {
   0% {
-    transform: translateY(200px);
+    transform: translateY(300px);
     opacity: 0; /* Начинаем с полной прозрачности */
   }
   30% {
-    transform: translateY(100px);
+    transform: translateY(150px);
     opacity: 0.5; /* Полупрозрачный */
   }
   70% {
-    transform: translateY(50px);
+    transform: translateY(75px);
     opacity: 0.8; /* Почти непрозрачный */
   }
   100% {
     transform: translateY(0);
     opacity: 1; /* Полная непрозрачность */
   }
+}
+
+@keyframes runningLine {
+  0% {
+    transform: translateX(0); /* Начальная позиция */
+  }
+  100% {
+    transform: translateX(-50%); /* Конечная позиция */
+  }
+}
+
+.running-line-container {
+  background: linear-gradient(to right, #000000cc, #000000d9);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.running-line {
+  color: white;
+  padding: 30px;
+  display: inline-block;
+  animation: runningLine 10s linear infinite;
+  font-size: 2rem;
+}
+
+.headline-services {
+  transition: all 0.5s;
+  animation: appear ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .service-appearing {

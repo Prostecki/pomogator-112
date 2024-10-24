@@ -13,6 +13,17 @@ const firstSectionArticle = document.querySelector(
 const firstSectionHeadline = document.querySelector(".first-section-headline");
 console.log(firstSectionArticle);
 
+const runningLine = document.querySelector(".running-line");
+console.log(runningLine);
+
+runningLine.addEventListener("mouseover", () => {
+  runningLine.classList.add("paused");
+});
+
+runningLine.addEventListener("mouseout", () => {
+  runningLine.classList.remove("paused");
+  console.log("paused??");
+});
 const serviceElement = document.querySelectorAll(".service");
 serviceElement.forEach((item) => {
   item.classList.add("service-appearing");

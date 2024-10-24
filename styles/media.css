@@ -1,116 +1,4 @@
 /* XL */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  header {
-    padding: 10px 0;
-  }
-
-  header h1 {
-    font-size: 28px;
-  }
-
-  header p {
-    font-size: 16px;
-  }
-
-  .navigation-box {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .main-container {
-    padding: 0 15px;
-  }
-
-  .first-presenting-section {
-    height: auto;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .services {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .service {
-    width: 90%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .service img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .service h3 {
-    font-size: 20px;
-  }
-
-  .service p {
-    font-size: 14px; 
-  }
-
-  .feedback-form-container {
-    padding: 20px;
-    margin: 20px 0;
-  }
-
-  form {
-    width: 100%;
-    padding: 15px;
-  }
-
-  footer {
-    font-size: 0.9rem;
-    padding: 10px 0;
-  }
-
-  .button, .service .button {
-    width: 160px;
-    padding: 12px;
-  }
-
-  .close-modal {
-    width: 20px;
-    top: 0.5rem;
-    right: 0.5rem;
-  }
-}
-
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 24px;
-  }
-
-  header p {
-    font-size: 14px;
-  }
-
-  .navigation-box {
-    gap: 5px;
-  }
-
-  .service h3 {
-    font-size: 18px;
-  }
-
-  .service p {
-    font-size: 12px;
-  }
-
-  .img-wrapper-services img {
-    max-width: 90%;
-  }
-}
-
 @media (max-width: 1440px) {
   header .container .name-company h1 {
     font-size: 2.5rem;
@@ -144,5 +32,157 @@
   }
   footer p {
     font-size: 1.3rem;
+  }
+}
+
+/* M */
+@media (max-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+  /* Doens't work at all */
+  /* body {
+    font-size: 16px;
+  } */
+
+  header {
+    padding: 10px 0;
+  }
+
+  /* Doesn't work at all, there are some classes which cover out values  */
+  /* header h1 {
+    font-size: 28px;
+  } */
+
+  header .container .name-company h1 {
+    font-size: 1.5rem;
+  }
+
+  header .container .name-company p {
+    font-size: 1.2rem;
+  }
+
+  /* Same problem */
+  /* header p {
+    font-size: 16px;
+  } */
+
+  .name-company {
+    color: #fff;
+    padding: 20px 20px;
+    display: block;
+  }
+  .navigation-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .first-presenting-box-info article {
+    font-size: 1.4rem;
+  }
+  .first-presenting-box-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .first-presenting-section {
+    height: 70vh;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .all-day-locksmith-services {
+    max-width: 100%;
+  }
+
+  .services .headline-services {
+    font-size: 2rem;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .service {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .service img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  .service h3 {
+    font-size: 20px;
+  }
+
+  .services .service p {
+    font-size: 1rem;
+    max-width: 400px;
+    margin: 0 0 20px;
+  }
+
+  /* Doesn't work */
+  /* .service p {
+    font-size: 14px;
+  } */
+
+  .feedback-form-container {
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+
+  .button,
+  .service .button {
+    width: 160px;
+    padding: 12px;
+  }
+
+  .close-modal {
+    width: 20px;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
+
+/* M */
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  .navigation-box {
+    gap: 5px;
+  }
+
+  .service h3 {
+    font-size: 18px;
+  }
+
+  .service p {
+    font-size: 12px;
+  }
+
+  .img-wrapper-services img {
+    max-width: 90%;
   }
 }

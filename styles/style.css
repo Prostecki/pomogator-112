@@ -4,13 +4,16 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
+  max-width: 100%;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   color: #333;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
   background-color: #f4f4f4;
   position: relative;
   scroll-behavior: smooth;
@@ -113,7 +116,7 @@ header p {
 }
 
 .name-company {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
   color: #fff;
   padding: 20px 0;
   display: flex;
@@ -196,9 +199,20 @@ main .button:hover {
   text-align: center;
   opacity: 0;
 }
+.paused {
+  animation-play-state: paused !important;
+}
+.headline-services {
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
 
 .services {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 40px;
 }
