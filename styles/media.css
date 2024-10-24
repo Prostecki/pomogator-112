@@ -197,8 +197,8 @@
     margin: 0 0 25px;
   }
 
-  .img-wrapper-services img {
-    max-width: 90%;
+  .all-day-container .img-wrapper-services img {
+    max-width: 400px;
   }
 
   .all-day-container {
