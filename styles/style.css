@@ -73,10 +73,12 @@ header h1 {
 }
 
 header p {
-  font-size: 18px;
+  font-size: 1.5rem;
   margin-top: 10px;
   font-weight: 300;
   line-height: 2.5rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
 }
 
 .navigation-box {
@@ -214,7 +216,7 @@ main .button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 .service {
