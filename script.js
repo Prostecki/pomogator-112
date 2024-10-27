@@ -1,6 +1,6 @@
 //button for calling a locksmith
 const header = document.querySelector("header");
-const contactButton = document.querySelector(".call-to-locksmith");
+const contactButton = document.querySelectorAll(".call-to-locksmith");
 const mainContainer = document.querySelector(".main-container");
 console.log(contactButton);
 const feedbackFormContainer = document.querySelector(
@@ -38,7 +38,10 @@ window.addEventListener("DOMContentLoaded", () => {
     firstSectionHeadline.classList.add("isActive");
   }, 2500);
   setTimeout(() => {
-    contactButton.classList.add("isActive");
+    // contactButton.classList.add("isActive");
+    contactButton.forEach((item) => {
+      item.classList.toggle("isActive");
+    });
   }, 3500);
   feedbackFormContainer.remove();
 });

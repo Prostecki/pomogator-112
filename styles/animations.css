@@ -19,10 +19,10 @@
 
 @keyframes runningLine {
   0% {
-    transform: translateX(0); /* Начальная позиция */
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Конечная позиция */
+    transform: translateX(-50%); /* Двигаем весь блок на 50% влево */
   }
 }
 
@@ -34,11 +34,15 @@
   box-sizing: border-box;
 }
 
+.running-line-content {
+  display: flex; /* Для горизонтального размещения элементов */
+  width: 200%; /* Увеличиваем ширину, чтобы разместить дублированный контент */
+  animation: runningLine 10s linear infinite;
+}
+
 .running-line {
   color: white;
   padding: 30px;
-  display: inline-block;
-  animation: runningLine 10s linear infinite;
   font-size: 2rem;
 }
 
