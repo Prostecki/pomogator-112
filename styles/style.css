@@ -59,10 +59,12 @@ body {
 }
 
 header {
+  position: fixed;
   background-color: white;
-  /* padding: 20px 0; */
   text-align: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  z-index: 2;
 }
 
 header h1 {
@@ -87,29 +89,19 @@ header .call-mobile-header {
 header .call-mobile-header::after {
   content: "";
   position: absolute;
-  width: 100%; /* Ширина изначально на 100% */
+  width: 100%;
   height: 3px;
   background-color: blue;
-  bottom: 0; /* Пример для размещения внизу */
+  bottom: 0;
   left: 0;
-  transform: scaleX(0); /* Сжимаем по оси X до 0 */
-  transform-origin: left; /* Начинаем анимацию слева */
-  transition: transform 1s ease; /* Плавный переход */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s ease;
 }
 
 header .call-mobile-header:hover::after {
-  transform: scaleX(1); /* Полностью разворачиваем по X */
+  transform: scaleX(1);
 }
-
-/* header .call-mobile-header {
-  font-size: 1.5rem;
-  margin-top: 10px;
-  font-weight: 300;
-  line-height: 2.5rem;
-  font-weight: bolder;
-  letter-spacing: 2px;
-  cursor: pointer;
-} */
 
 .navigation-box {
   display: flex;
@@ -190,7 +182,8 @@ main .button:hover {
 }
 
 .background-wrapper {
-  background-image: url("/images/first-section-background.png");
+  /* background-image: url("/images/first-section-background.png"); */
+  background-color: white;
   height: 100%;
   position: absolute;
   top: 0;
@@ -204,7 +197,7 @@ main .button:hover {
 }
 
 .first-presenting-section {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.093);
   position: relative;
   height: 100vh;
   width: 100%;
@@ -222,7 +215,7 @@ main .button:hover {
 }
 
 .first-presenting-section article {
-  color: white;
+  color: black;
   letter-spacing: 1.2px;
   font-weight: bolder;
   font-size: 1.8rem;

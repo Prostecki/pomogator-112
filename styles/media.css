@@ -86,9 +86,14 @@
   }
 
   .first-presenting-section {
-    height: 70vh;
+    height: 100vh;
     padding: 20px 0;
     text-align: center;
+  }
+
+  .running-line-content p {
+    font-size: 1.2rem;
+    padding: 15px;
   }
 
   .all-day-locksmith-services {

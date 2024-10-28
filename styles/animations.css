@@ -22,7 +22,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Двигаем весь блок на 50% влево */
+    transform: translateX(-50%);
   }
 }
 
@@ -35,9 +35,9 @@
 }
 
 .running-line-content {
-  display: flex; /* Для горизонтального размещения элементов */
-  width: 200%; /* Увеличиваем ширину, чтобы разместить дублированный контент */
-  animation: runningLine 10s linear infinite;
+  display: flex;
+  width: 100%;
+  animation: runningLine 20s linear infinite;
 }
 
 .running-line {
