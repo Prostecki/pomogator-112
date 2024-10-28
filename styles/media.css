@@ -1,5 +1,5 @@
 /* XL */
-/* @media (max-width: 1440px) {
+@media (max-width: 1440px) {
   header .container .name-company h1 {
     font-size: 2.5rem;
   }
@@ -21,19 +21,24 @@
     font-size: 1.3rem;
   }
   .all-day-locksmith-services article {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    padding: 10px;
   }
   .img-wrapper-services {
     display: flex;
     align-items: center;
+    & img {
+      max-width: 500px;
+    }
   }
-  .locksmith-services-box-info p {
-    font-size: 1.5rem;
+  .locksmith-services-box-info {
+    max-width: 400px;
+    font-size: 1.2rem;
   }
   footer p {
     font-size: 1.3rem;
   }
-} */
+}
 
 /* M */
 @media (max-width: 768px) {

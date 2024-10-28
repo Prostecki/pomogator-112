@@ -242,21 +242,29 @@ main .button:hover {
 
 .service {
   display: flex;
-  background: #fff;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
   max-width: 30%;
   text-align: center;
   box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.service img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .service img {
+  /* position: absolute; */
+  transition: transform 1s ease;
   max-width: 100%;
-  border-radius: 5px 5px 0 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .service h3 {

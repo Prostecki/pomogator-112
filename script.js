@@ -1,6 +1,7 @@
 //button for calling a locksmith
 const header = document.querySelector("header");
-const contactButton = document.querySelectorAll(".call-to-locksmith");
+const contactButton = document.querySelector("#contact-to-master");
+const numberButton = document.querySelector(".call-to-locksmith");
 const mainContainer = document.querySelector(".main-container");
 console.log(contactButton);
 const feedbackFormContainer = document.querySelector(
@@ -38,10 +39,8 @@ window.addEventListener("DOMContentLoaded", () => {
     firstSectionHeadline.classList.add("isActive");
   }, 2500);
   setTimeout(() => {
-    // contactButton.classList.add("isActive");
-    contactButton.forEach((item) => {
-      item.classList.toggle("isActive");
-    });
+    contactButton.classList.add("isActive");
+    numberButton.classList.add("isActive");
   }, 3500);
   feedbackFormContainer.remove();
 });
@@ -68,12 +67,11 @@ contactButton.addEventListener("click", () => {
   console.log(closeModalButton);
 
   closeModalButton.addEventListener("click", () => {
-    const modalContainer = document.querySelector(".modal-container");
-    // modalContainer.remove();
-    location.reload();
+    // location.reload();
     document.body.style.overflow = "auto";
     header.style.filter = "none";
     mainContainer.style.filter = "none";
     document.body.appendChild(mainContainer);
+    feedbackFormContainer.remove();
   });
 });
