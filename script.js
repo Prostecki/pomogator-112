@@ -1,4 +1,4 @@
-// Получаем необходимые элементы
+"use strict";
 const header = document.querySelector("header");
 const contactButton = document.querySelector("#contact-to-master");
 const numberButton = document.querySelector(".call-to-locksmith");
@@ -11,7 +11,6 @@ window.onscroll = () => {
   header.classList.toggle("scrolled", window.scrollY > 10);
 };
 
-// Анимация элементов на странице при загрузке
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(
     () =>
@@ -33,7 +32,6 @@ window.addEventListener("DOMContentLoaded", () => {
   }, 3500);
 });
 
-// Создание модального окна для формы
 contactButton.addEventListener("click", () => {
   feedbackFormContainer.classList.add("show");
   document.body.style.overflow = "hidden";
@@ -43,7 +41,7 @@ contactButton.addEventListener("click", () => {
   closeModal.addEventListener("click", (e) => {
     feedbackFormContainer.classList.remove("show");
     document.body.style.overflow = "";
-    if (e.target === feedbackFormContainer) {
+    if (e.target === mainContainer) {
       closeModal();
     }
   });

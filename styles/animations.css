@@ -36,7 +36,7 @@
 
 .running-line-content {
   display: flex;
-  height: 10vh;
+  height: 100%;
   width: 100%;
   animation: runningLine 20s linear infinite;
 }
