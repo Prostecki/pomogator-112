@@ -237,6 +237,10 @@ main .button:hover {
   border-bottom: 100px solid #333;
 }
 
+.procedure h1 {
+  margin: 0 0 50px;
+}
+
 .procedure-container {
   width: 100%;
   display: flex;
