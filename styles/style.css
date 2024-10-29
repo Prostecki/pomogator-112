@@ -60,11 +60,17 @@ body {
 
 header {
   position: fixed;
-  background-color: white;
+  background: transparent;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); */
   width: 100%;
   z-index: 2;
+  transition: all 0.6s;
+}
+
+.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
 header h1 {

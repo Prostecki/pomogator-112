@@ -6,6 +6,11 @@ const mainContainer = document.querySelector(".main-container");
 const feedbackFormContainer = document.querySelector(
   ".feedback-form-container"
 );
+
+window.onscroll = () => {
+  header.classList.toggle("scrolled", window.scrollY > 10);
+};
+
 // Анимация элементов на странице при загрузке
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(
