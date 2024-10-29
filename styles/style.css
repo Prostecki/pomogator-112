@@ -241,7 +241,7 @@ main .button:hover {
 }
 
 .service {
-  display: flex;
+  position: relative;
   border-radius: 5px;
   max-width: 30%;
   text-align: center;
@@ -254,25 +254,14 @@ main .button:hover {
 }
 
 .img-wrapper {
-  overflow: hidden;
   position: relative;
-  display: flex;
-  border-radius: 10px;
-  background: black;
-  max-width: 100%;
+  overflow: hidden;
 }
 
-.img-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.service-img {
+  display: block;
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  opacity: 0;
-  transition: opacity 0.5 ease;
+  transition: transform 0.5s ease;
 }
 
 .img-wrapper:hover .service-img {
@@ -280,9 +269,42 @@ main .button:hover {
 }
 
 .img-wrapper:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s ease;
+}
+
+.img-wrapper:hover::after {
   opacity: 1;
 }
 
+.service-more-about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e8491d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  z-index: 1;
+  max-width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s ease;
+  border: 2px solid black;
+  &:hover {
+    background-color: #696969;
+    color: #fff;
+  }
+}
+
+.img-wrapper:hover .service-more-about {
+  opacity: 1;
+}
 .service-img {
   transition: transform 1s ease;
   max-width: 100%;
@@ -299,19 +321,6 @@ main .button:hover {
 .service p {
   font-size: 16px;
   color: #666;
-}
-
-.service .button {
-  background-color: #e8491d;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 16px;
-  display: block;
-  max-width: 250px;
-  text-align: center;
-  width: 200px;
 }
 
 .service .button:hover {
