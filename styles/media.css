@@ -45,19 +45,6 @@
   body {
     max-width: 100%;
   }
-  /* Doens't work at all */
-  /* body {
-    font-size: 16px;
-  } */
-
-  header {
-    padding: 10px 0;
-  }
-
-  /* Doesn't work at all, there are some classes which cover out values  */
-  /* header h1 {
-    font-size: 28px;
-  } */
 
   header .container .name-company h1 {
     font-size: 1.5rem;
@@ -67,13 +54,7 @@
     font-size: 1.2rem;
   }
 
-  /* Same problem */
-  /* header p {
-    font-size: 16px;
-  } */
-
   .name-company {
-    color: #fff;
     padding: 20px 20px;
     display: block;
   }
@@ -91,7 +72,7 @@
   }
 
   .first-presenting-section {
-    height: 100vh;
+    height: 85vh;
     padding: 20px 0;
     text-align: center;
   }
@@ -122,7 +103,7 @@
   }
 
   .service img {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
   }
 
@@ -145,14 +126,12 @@
     flex-wrap: wrap;
   }
 
-  /* Doesn't work */
-  /* .service p {
-    font-size: 14px;
-  } */
-
   .feedback-form-container {
     padding: 20px;
-    margin: 20px 0;
+  }
+
+  #contact-form {
+    max-width: 300px;
   }
 
   form {
@@ -172,7 +151,7 @@
   }
 
   .close-modal {
-    width: 20px;
+    width: 25px;
     top: 0.5rem;
     right: 0.5rem;
   }

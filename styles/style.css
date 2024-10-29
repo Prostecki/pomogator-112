@@ -256,6 +256,7 @@ main .button:hover {
 .img-wrapper {
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .service-img {
