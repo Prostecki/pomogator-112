@@ -199,7 +199,7 @@ main .button:hover {
 .first-presenting-section {
   background: rgba(0, 0, 0, 0.093);
   position: relative;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -363,7 +363,7 @@ main .button:hover {
   margin: 15px 0 15px;
 }
 
-.feedback-form-container {
+/* .feedback-form-container {
   width: 100%;
   height: 100%;
   border-top: 0.5px solid grey;
@@ -374,6 +374,23 @@ main .button:hover {
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.55);
   justify-content: center;
+} */
+
+.feedback-form-container {
+  position: relative;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#contact-form {
+  display: none; /* Скрываем форму по умолчанию */
+  opacity: 0; /* Начальное состояние непрозрачности */
+  transition: opacity 0.5s ease; /* Плавный переход для прозрачности */
+}
+
+#contact-form.show {
+  display: block; /* Показываем форму при добавлении класса */
+  opacity: 1; /* Устанавливаем непрозрачность */
 }
 
 .feedback-form-container h1 {

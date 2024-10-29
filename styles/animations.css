@@ -36,14 +36,15 @@
 
 .running-line-content {
   display: flex;
+  height: 10vh;
   width: 100%;
   animation: runningLine 20s linear infinite;
 }
 
 .running-line {
   color: white;
-  padding: 30px;
-  font-size: 2rem;
+  padding: 22px;
+  font-size: 1.7rem;
 }
 
 .headline-services {
