@@ -26,29 +26,20 @@ window.addEventListener("DOMContentLoaded", () => {
     contactButton.classList.add("isActive");
     numberButton.classList.add("isActive");
   }, 3500);
-  feedbackFormContainer.remove(); // Убираем форму из DOM до открытия
 });
 
 // Создание модального окна для формы
 contactButton.addEventListener("click", () => {
+  feedbackFormContainer.classList.add("show");
   document.body.style.overflow = "hidden";
-  header.style.filter = "blur(3px)";
-  mainContainer.style.filter = "blur(3px)";
+  console.log("clicked?");
 
-  // Создание контейнера для модального окна
-  const modalContainer = document.createElement("div");
-  modalContainer.classList.add("modal-container");
-
-  // Вставка формы в контейнер и добавление в DOM
-  modalContainer.appendChild(feedbackFormContainer);
-  document.body.appendChild(modalContainer);
-
-  // Закрытие модального окна
-  modalContainer.querySelector(".close-modal").addEventListener("click", () => {
-    document.body.style.overflow = "auto";
-    header.style.filter = "none";
-    mainContainer.style.filter = "none";
-    document.body.removeChild(modalContainer);
-    feedbackFormContainer.remove(); // Удаляем форму из DOM после закрытия
+  const closeModal = document.querySelector(".close-modal");
+  closeModal.addEventListener("click", (e) => {
+    feedbackFormContainer.classList.remove("show");
+    document.body.style.overflow = "";
+    if (e.target === feedbackFormContainer) {
+      closeModal();
+    }
   });
 });

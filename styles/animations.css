@@ -54,7 +54,8 @@
   animation-range: entry 0% cover 40%;
 }
 
-.service-appearing {
+.service-appearing,
+.service {
   animation: appear ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
