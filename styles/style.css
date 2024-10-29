@@ -233,6 +233,8 @@ main .button:hover {
   height: 80vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  border-bottom: 100px solid #333;
 }
 
 .procedure-container {
